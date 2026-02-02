@@ -1,0 +1,136 @@
+.blog {
+  padding: 100px 0;
+  background-color: #f9f9f9;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blog-container h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #19191B;
+  margin-bottom: 15px;
+}
+
+.blog-container p {
+  font-size: 18px;
+  color: #696871;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+
+/* BLOCK CARDS INNER CONTAINER */
+.block-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px; /* ichkariroq, container’dan kichik */
+  margin: 0 auto;    /* markazlashtirish */
+}
+
+/* SINGLE CARD */
+.block-card {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  flex: 1 1 45%;
+  max-width: 400px; /* har bir card kengligi */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.block-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.1);
+}
+
+.block-card h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #19191B;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* REVIEWER INFO */
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.reviewer img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewer div h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #19191B;
+  margin-bottom: 5px;
+}
+
+.reviewer div h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #696871;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .block-cards {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .block-cards {
+    flex-direction: column; /* Mobile ustma-ust */
+    max-width: 100%;        /* ichkariga sig‘sin */
+  }
+
+  .block-card {
+    max-width: 100%;
+  }
+
+  .reviewer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .reviewer div h2,
+  .reviewer div h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-container h1 {
+    font-size: 32px;
+  }
+
+  .blog-container p {
+    font-size: 16px;
+  }
+
+  .block-card h3 {
+    font-size: 16px;
+  }
+
+  .reviewer div h2 {
+    font-size: 15px;
+  }
+
+  .reviewer div h3 {
+    font-size: 13px;
+  }
+}

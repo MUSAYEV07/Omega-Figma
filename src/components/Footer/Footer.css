@@ -1,0 +1,92 @@
+.footer {
+  background-color: #ffffff; /* OQ background */
+  color: #19191B;
+  padding: 80px 0 30px;
+  border-top: 1px solid #eaeaea;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* Brand */
+.footer-logo {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #19191B;
+}
+
+.footer-col p {
+  color: #696871;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Titles */
+.footer-col h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #19191B;
+}
+
+/* Lists */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  font-size: 14px;
+  color: #696871;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+/* KO‘K HOVER */
+.footer-col ul li:hover {
+  color: #0066ff; /* ko‘k */
+  transform: translateX(4px);
+}
+
+/* Bottom */
+.footer-bottom {
+  margin-top: 60px;
+  text-align: center;
+  border-top: 1px solid #eaeaea;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #696871;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-col ul li:hover {
+    transform: none;
+  }
+}

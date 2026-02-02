@@ -1,0 +1,130 @@
+.content {
+  padding: 100px 0;
+   background: linear-gradient(135deg, #fff5f4, #ffffff);
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; /* Mobile uchun */
+}
+
+.content-card {
+  flex: 1;
+  max-width: 500px;
+}
+
+.content-card h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #19191B;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  transition: transform 0.3s ease;
+}
+
+.content-card h1:hover {
+  transform: translateY(-3px);
+}
+
+.content-card p {
+  font-size: 18px;
+  color: #696871;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* Premium gradient button */
+.content-card button {
+  padding: 14px 36px;
+  background: linear-gradient(135deg, #F04037, #FF6A5E);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 25px rgba(240, 64, 55, 0.35);
+}
+
+/* Shine effect */
+.content-card button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+
+/* Hover */
+.content-card button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 16px 35px rgba(240, 64, 55, 0.45);
+}
+
+.content-card button:hover::before {
+  left: 120%;
+}
+
+.container-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.container-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.container-img img:hover {
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .content-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content-card {
+    max-width: 100%;
+  }
+
+  .container-img {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-card h1 {
+    font-size: 32px;
+  }
+
+  .content-card p {
+    font-size: 16px;
+  }
+
+  .content-card button {
+    width: 100%;
+  }
+}

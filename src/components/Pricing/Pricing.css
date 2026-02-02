@@ -1,0 +1,131 @@
+/* PRICING / GET STARTED SECTION */
+.pricing {
+  padding: 120px 0;
+  background-color: #413E65;
+}
+
+.pricing-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+/* Image */
+.pricing-container img {
+    border-radius: 10px;
+  width: 380px;
+  height: 566px;
+  max-width: 100%;
+}
+
+/* Text content */
+.pricing-container h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.pricing-container p {
+  font-size: 18px;
+  color: #FFFFFFB2;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+/* Input + Button */
+.pricing-container > div > div {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.pricing-container input {
+  flex: 1;
+  width: 445px;
+  padding: 14px 18px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-container input:focus {
+  border-color: #f04037;
+  box-shadow: 0 0 0 3px rgba(240, 64, 55, 0.15);
+}
+
+/* Button – premium style */
+.pricing-container button {
+  width: 445px;
+  padding: 14px;
+  background: linear-gradient(135deg, #F04037, #FF6A5E);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 25px rgba(240, 64, 55, 0.35);
+}
+
+.pricing-container button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 35px rgba(240, 64, 55, 0.45);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .pricing-container {
+    padding: 50px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .pricing-container img {
+    width: 300px;
+  }
+
+  .pricing-container > div > div {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-container {
+    padding: 30px 20px;
+  }
+
+  .pricing-container h1 {
+    font-size: 30px;
+  }
+
+  .pricing-container p {
+    font-size: 16px;
+  }
+
+  .pricing-container input {
+    min-width: 100%;
+  }
+
+  .pricing-container button {
+    width: 100%;
+  }
+}

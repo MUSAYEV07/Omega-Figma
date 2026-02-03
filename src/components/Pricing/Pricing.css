@@ -129,3 +129,10 @@
     width: 100%;
   }
 }
+/* Input + Button wrapper (dizayn o‘zgarmaydi) */
+.input-button-wrapper {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+

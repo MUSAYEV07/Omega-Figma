@@ -2,6 +2,7 @@ import React from "react";
 import email from "./email.png";
 import hero from "./hero.png";
 import "./Hero.css";
+import TelegramBot from "../Tg/TelegramBot";
 
 function Hero() {
   return (
@@ -20,17 +21,7 @@ function Hero() {
             visitors than any website. With lots of unique blocks, you can <br />
             easily build a page without coding.
           </p>
-
-          <div className="hero-btns">
-            <div className="input-wrapper">
-              <img src={email} alt="Email icon" />
-              <input
-                type="email"
-                placeholder="Email address"
-              />
-            </div>
-            <button>Get Started</button>
-          </div>
+          <TelegramBot/>
         </div>
       </div>
     </section>

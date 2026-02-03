@@ -1,0 +1,59 @@
+.telegram-hero-btns {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  background-color: #ffffff;
+  
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;  /* ⚡ Vertikal markazlash uchun */
+  flex: 1;
+  padding: 0 15px;
+}
+
+.input-wrapper img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 12px 0;
+  line-height: 1.2; /* placeholder va text markazlashishi uchun */
+  vertical-align: middle;
+}
+
+.telegram-hero-btns button {
+  background-color: #F04037;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.telegram-hero-btns button:hover {
+  background-color: #C31A12;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .telegram-hero-btns {
+    flex-direction: column;
+    border-radius: 25px;
+  }
+
+  .telegram-hero-btns button {
+    width: 100%;
+    border-radius: 0 0 25px 25px;
+  }
+}

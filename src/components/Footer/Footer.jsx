@@ -49,8 +49,8 @@ function Footer() {
           <div className="footer-col">
             <h3>Contact us</h3>
             <ul>
-              <li>support@uxtheme.net</li>
-              <li>+133-394-3439-1435</li>
+              <li><a href="https://www.instagram.com/the.musayev.officeall?igsh=MTQ2YnhzMW9uODdtaA==">@the.musayev.officeall</a></li>
+              <li><a href="tel:+998 77 132 58 07">+998 77 132 58 07</a></li>
             </ul>
           </div>
 
